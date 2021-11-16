@@ -52,10 +52,6 @@ blockquote { background: var(--global-bg-color); border-left: 2px solid var(--gl
 
 @media (min-width: 576px) { .profile { width: 30%; } .profile .address p { display: block; } }
 
-.btn { color: var(--global-text-color); border: 1px solid var(--global-text-color); padding-left: 1rem; padding-right: 1rem; padding-top: 0.25rem; padding-bottom: 0.25rem; margin-bottom: 0rem; }
-
-.btn:hover { color: var(--global-theme-color); border-color: var(--global-theme-color); }
-
 .post-description { margin-bottom: 2rem; font-size: 0.875rem; }
 
 .post-description a { color: inherit; }
