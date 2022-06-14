@@ -19,9 +19,13 @@ body.fixed-top-nav { padding-top: 56px; }
 
 body.sticky-bottom-footer { padding-bottom: 0; }
 
-.container { max-width: 1000px; }
+.container { max-width: 1300px; }
 
-.profile img { width: 100%; }
+.profile { float: right; width: 0px; margin-left: 0rem; }
+
+.profile img { width: 70%; float: right; }
+
+.profile .side-below-img { width: 70%; float: right; }
 
 /****************************************************************************** Publications */
 /***************************************************************************** Projects */
@@ -44,7 +48,7 @@ blockquote { background: var(--global-bg-color); border-left: 2px solid var(--gl
 
 .citation, .citation-number { color: var(--global-theme-color); }
 
-.profile { margin-left: 1rem; width: 100%; margin-bottom: 0px; margin-top: 0px; }
+.profile { margin-left: 0rem; width: 100%; margin-bottom: 0px; margin-top: 0px; }
 
 .profile .address { margin-bottom: 5px; margin-top: 5px; font-family: monospace; font-size: 1.2rem; }
 
