@@ -28,7 +28,7 @@ Gururaj's Homepage
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
 
 <!-- Code Syntax Highlighting -->
-<link rel="stylesheet" href="https://gitcdn.link/repo/jwarby/jekyll-pygments-themes/master/github.css" />
+<link rel="stylesheet" href="/assets/css/github.css" />
 
 <!-- Styles -->
 
@@ -213,7 +213,7 @@ Gururaj's Homepage
   <li><strong>Software Reliability</strong>: Enabled hardware support for low-cost memory safety [<a href="/assets/pdf/DSN21_Boivie.pdf">8</a>] and fuzzing [<a href="/assets/pdf/CCS21_Ding.pdf">9</a>] to make software resilient to bugs causing a majority of current vulnerabilities.</li>
 </ul>
 
-<p>My work has been awarded a <strong>HPCA Best Paper Award</strong>, <strong>IEEE HOST Best PhD Dissertation Award</strong>, <strong>ACM SIGARCH / IEEE TCCA Outstanding Dissertation Award (Honorable Mention)</strong>, and a <strong>IEEE MICRO Top Picks (Honorable Mention)</strong>. My PhD was partly supported by a GT Cybersecurity Fellowship and a GT Bourne Fellowship.</p>
+<p>My work has been awarded a <strong>HPCA Best Paper Award</strong>, <strong>IEEE HOST Best PhD Dissertation Award</strong>, <strong>ACM SIGARCH / IEEE TCCA Outstanding Dissertation Award (Honorable Mention)</strong>, <strong>ACM SIGMICRO Dissertation Award (Honorable Mention)</strong>, and a <strong>IEEE MICRO Top Picks (Honorable Mention)</strong>. My PhD was partly supported by a GT Cybersecurity Fellowship and a GT Bourne Fellowship.</p>
 
 <p>I received my PhD at <a href="https://www.ece.gatech.edu">Georgia Tech</a>, Atlanta, USA, where I was advised by <a href="https://www.cc.gatech.edu/~moin/">Prof. Moinuddin Qureshi</a>. I received my B.Tech and M.Tech at <a href="http://www.iitb.ac.in/">Indian Institute of Technology - Bombay</a>, India. Prior to joining UofT, I was with <a href="https://www.nvidia.com/en-us/research">NVIDIA Research</a>.</p>
 
@@ -234,274 +234,274 @@ Gururaj's Homepage
     
     <div class="news">
   <h2>news <small><span onClick="toggle('hide');" class="span-link">(full list)</span></small> </h2> 
-  
-  <script>
-    function toggle(thisname) {
-	
-        tr=document.getElementsByTagName('tr')
-	
-        for (i=0;i<tr.length;i++){
-            if (tr[i].getAttribute(thisname)){
-                if ( tr[i].style.display=='none' ){
+
+   <script>
+        function toggle(thisname) {
+
+           tr=document.getElementsByTagName('tr')
+
+           for (i=0;i<tr.length;i++){
+              if (tr[i].getAttribute(thisname)){
+                 if ( tr[i].style.display=='none' ){
                     tr[i].style.display = '';
-                }
-		else {
-                    tr[i].style.display = 'none';
-                }
-            }
+                 }
+              else {
+                 tr[i].style.display = 'none';
+                 }
+              }
+           }
         }
-    }
-  </script>
-  
+   </script>
+   
     
   <div class="table-responsive">
-    <table class="table table-sm table-borderless">
+      <table class="table table-sm table-borderless">
       
       
-      
-      <tr>
         
-        <th scope="row">Aug, 2023</th>
-        <td>
-          Our <b>CAL-2023</b> paper  <a href='https://ieeexplore.ieee.org/abstract/document/10190227'>Mirage of breaking MIRAGE</a> highlights modeling pitfalls in recent &#8220attacks&#8221, and shows <b>MIRAGE is still unbroken</b>!
-        </td>
-      </tr>
-      
-      
-      <tr>
+        <tr>
         
-        <th scope="row">Aug, 2023</th>
-        <td>
-          Serving as a <b>Workshop & Tutorial Chair</b> at <b>MICRO 2023</b>!
-        </td>
-      </tr>
+          <th scope="row">Aug, 2023</th>
+          <td>
+            Our <b>CAL-2023</b> paper  <a href='https://ieeexplore.ieee.org/abstract/document/10190227'>Mirage of breaking MIRAGE</a> highlights modeling pitfalls in recent &#8220attacks&#8221, and shows <b>MIRAGE is still unbroken</b>!
+          </td>
+        </tr>
       
-      
-      <tr>
         
-        <th scope="row">Jun, 2023</th>
-        <td>
-          Awarded the <a href='https://www.sigarch.org/benefit/awards/acm-sigarch-ieee-cs-tcca-outstanding-dissertation-award/'>ACM SIGARCH/IEEE CS TCCA Outstanding Dissertation Award (Honorable Mention)</a> at ISCA'23!
-        </td>
-      </tr>
-      
-      
-      <tr>
+        <tr>
         
-        <th scope="row">Feb, 2023</th>
-        <td>
-          Our paper <a href='https://gururaj-s.github.io/assets/pdf/HPCA23_Woo.pdf'>Scalable and Secure Row-Swap</a> at HPCA-2023 received the <b>Best Paper Award</b>!
-        </td>
-      </tr>
+          <th scope="row">Aug, 2023</th>
+          <td>
+            Serving as a <b>Workshop & Tutorial Chair</b> at <b>MICRO 2023</b>!
+          </td>
+        </tr>
       
-      
-      <tr hide="Yes" style="display: none;">
         
-        <th scope="row">Sep, 2022</th>
-        <td>
-          Serving as <b>Co-Chair</b> of the <b>Artifact Evaluation Committee</b> at <b>ASPLOS 2023</b>.
-        </td>
-      </tr>
-      
-      
-      <tr>
+        <tr>
         
-        <th scope="row">Aug, 2022</th>
-        <td>
-          <b>SQUIP attack</b> (<a href='https://www.amd.com/en/corporate/product-security/bulletin/amd-sb-1039'>CVE-2021-46778</a>), discovered with collaborators at TU Graz, is public. (<a href='https://www.techradar.com/news/new-vulnerability-in-amd-ryzen-cpus-could-seriously-jeopardize-performance'>techradar</a>, <a href='https://www.tomshardware.com/news/new-vulnerability-affects-all-amd-zen-cpus'>toms hardware</a>, <a href='https://thehackernews.com/2022/08/pic-and-squip-vulnerabilities-found-in.html'>hacker news</a>, ...)
-        </td>
-      </tr>
+          <th scope="row">Jun, 2023</th>
+          <td>
+            Awarded the <a href='https://www.sigarch.org/benefit/awards/acm-sigarch-ieee-cs-tcca-outstanding-dissertation-award/'>ACM SIGARCH/IEEE CS TCCA Outstanding Dissertation Award (Honorable Mention)</a> at ISCA'23!
+          </td>
+        </tr>
       
-      
-      <tr hide="Yes" style="display: none;">
         
-        <th scope="row">Jun, 2022</th>
-        <td>
-          Awarded the <a href='https://www.ece.gatech.edu/news/659674/research-hardware-security-gururaj-saileshwar-wins-best-dissertation-award'>Best PhD Dissertation Award</a> at <b>IEEE HOST 2022</b>.
-        </td>
-      </tr>
-      
-      
-      <tr hide="Yes" style="display: none;">
+        <tr>
         
-        <th scope="row">Mar, 2022</th>
-        <td>
-          Invited to serve on the <b>Program Committee (PC)</b> for <b>RAID 2022</b>.
-        </td>
-      </tr>
+          <th scope="row">Feb, 2023</th>
+          <td>
+            Our paper <a href='https://gururaj-s.github.io/assets/pdf/HPCA23_Woo.pdf'>Scalable and Secure Row-Swap</a> at HPCA-2023 received the <b>Best Paper Award</b>!
+          </td>
+        </tr>
       
-      
-      <tr hide="Yes" style="display: none;">
         
-        <th scope="row">Nov, 2021</th>
-        <td>
-          Our paper <b>Randomized Row Swap</b>, a principled Rowhammer mitigation accepted at <b>ASPLOS 2022</b>!
-        </td>
-      </tr>
-      
-      
-      <tr hide="Yes" style="display: none;">
+        <tr hide="Yes" style="display: none;">
         
-        <th scope="row">Oct, 2021</th>
-        <td>
-          Invited to serve on the <b>External Review Committee (ERC)</b> for <b>ISCA 2022</b>.
-        </td>
-      </tr>
+          <th scope="row">Sep, 2022</th>
+          <td>
+            Serving as <b>Co-Chair</b> of the <b>Artifact Evaluation Committee</b> at <b>ASPLOS 2023</b>.
+          </td>
+        </tr>
       
-      
-      <tr hide="Yes" style="display: none;">
         
-        <th scope="row">May, 2021</th>
-        <td>
-          Our paper on <a href='https://gururaj-s.github.io/assets/pdf/WCAE21_Garza.pdf'>Mentoring in Computer Architecture</a> is presented in <b>WCAE at ISCA 2021<b>.
-        </td>
-      </tr>
-      
-      
-      <tr hide="Yes" style="display: none;">
+        <tr>
         
-        <th scope="row">May, 2021</th>
-        <td>
-          Finalist in the <b>Qualcomm Innovation Fellowship 2021</b>!
-        </td>
-      </tr>
+          <th scope="row">Aug, 2022</th>
+          <td>
+            <b>SQUIP attack</b> (<a href='https://www.amd.com/en/corporate/product-security/bulletin/amd-sb-1039'>CVE-2021-46778</a>), discovered with collaborators at TU Graz, is public. (<a href='https://www.techradar.com/news/new-vulnerability-in-amd-ryzen-cpus-could-seriously-jeopardize-performance'>techradar</a>, <a href='https://www.tomshardware.com/news/new-vulnerability-affects-all-amd-zen-cpus'>toms hardware</a>, <a href='https://thehackernews.com/2022/08/pic-and-squip-vulnerabilities-found-in.html'>hacker news</a>, ...)
+          </td>
+        </tr>
       
-      
-      <tr hide="Yes" style="display: none;">
         
-        <th scope="row">Mar, 2021</th>
-        <td>
-          Invited to serve on the <b>Program Committee (PC)</b> for <b>IEEE S&P (Oakland) 2022</b>.
-        </td>
-      </tr>
-      
-      
-      <tr hide="Yes" style="display: none;">
+        <tr hide="Yes" style="display: none;">
         
-        <th scope="row">Mar, 2021</th>
-        <td>
-          <a href='https://gururaj-s.github.io/assets/pdf/CCS21_Ding.pdf'>Hardware Support for Fuzzing</a> accepted at <b>CCS 2021</b>!
-        </td>
-      </tr>
+          <th scope="row">Jun, 2022</th>
+          <td>
+            Awarded the <a href='https://www.ece.gatech.edu/news/659674/research-hardware-security-gururaj-saileshwar-wins-best-dissertation-award'>Best PhD Dissertation Award</a> at <b>IEEE HOST 2022</b>.
+          </td>
+        </tr>
       
-      
-      <tr hide="Yes" style="display: none;">
         
-        <th scope="row">Mar, 2021</th>
-        <td>
-          Recognized as <b>Distinguished Reviewer</b> in the Shadow PC of <b>IEEE S&P (Oakland) 2021</b>.
-        </td>
-      </tr>
-      
-      
-      <tr hide="Yes" style="display: none;">
+        <tr hide="Yes" style="display: none;">
         
-        <th scope="row">Feb, 2021</th>
-        <td>
-          <a href='https://gururaj-s.github.io/assets/pdf/SEC21_Saileshwar.pdf'>MIRAGE</a>, a principled defense vs cache attacks accepted at <b>USENIX Security 2021</b> [<a href='https://github.com/gururaj-s/mirage'>Github</a>].
-        </td>
-      </tr>
+          <th scope="row">Mar, 2022</th>
+          <td>
+            Invited to serve on the <b>Program Committee (PC)</b> for <b>RAID 2022</b>.
+          </td>
+        </tr>
       
-      
-      <tr hide="Yes" style="display: none;">
         
-        <th scope="row">Jan, 2021</th>
-        <td>
-          <a href='https://gururaj-s.github.io/assets/pdf/ASPLOS21_Saileshwar.pdf'>Streamline</a>, the fastest cache covert-channel attack accepted at <b>ASPLOS 2021</b> [<a href='https://github.com/gururaj-s/streamline'>Github</a>].
-        </td>
-      </tr>
-      
-      
-      <tr hide="Yes" style="display: none;">
+        <tr hide="Yes" style="display: none;">
         
-        <th scope="row">Jan, 2021</th>
-        <td>
-          Awarded <b>Georgia Tech IISP Cybersecurity Fellowship</b>!
-        </td>
-      </tr>
+          <th scope="row">Nov, 2021</th>
+          <td>
+            Our paper <b>Randomized Row Swap</b>, a principled Rowhammer mitigation accepted at <b>ASPLOS 2022</b>!
+          </td>
+        </tr>
       
-      
-      <tr hide="Yes" style="display: none;">
         
-        <th scope="row">Nov, 2020</th>
-        <td>
-          Invited to present MIRAGE at IBM Research's Future of Comp-Arch Workshop 2020.
-        </td>
-      </tr>
-      
-      
-      <tr hide="Yes" style="display: none;">
+        <tr hide="Yes" style="display: none;">
         
-        <th scope="row">Apr, 2020</th>
-        <td>
-          Selected to participate in the 8th Heidelberg Laureate Forum 2020.
-        </td>
-      </tr>
+          <th scope="row">Oct, 2021</th>
+          <td>
+            Invited to serve on the <b>External Review Committee (ERC)</b> for <b>ISCA 2022</b>.
+          </td>
+        </tr>
       
-      
-      <tr hide="Yes" style="display: none;">
         
-        <th scope="row">Sep, 2019</th>
-        <td>
-          Invited to present CleanupSpec at IBM Research's Future of Comp-Arch Workshop 2019.
-        </td>
-      </tr>
-      
-      
-      <tr hide="Yes" style="display: none;">
+        <tr hide="Yes" style="display: none;">
         
-        <th scope="row">Aug, 2019</th>
-        <td>
-          <a href='https://gururaj-s.github.io/assets/pdf/MICRO19_Saileshwar.pdf'>CleanupSpec</a>, our work on safe speculation is accepted at <b>MICRO 2019</b> [<a href='https://github.com/gururaj-s/cleanupspec'>Github</a>].
-        </td>
-      </tr>
+          <th scope="row">May, 2021</th>
+          <td>
+            Our paper on <a href='https://gururaj-s.github.io/assets/pdf/WCAE21_Garza.pdf'>Mentoring in Computer Architecture</a> is presented in <b>WCAE at ISCA 2021<b>.
+          </td>
+        </tr>
       
-      
-      <tr hide="Yes" style="display: none;">
         
-        <th scope="row">May, 2019</th>
-        <td>
-          Finalist in <b>Qualcomm Innovation Fellowship 2019</b>!
-        </td>
-      </tr>
-      
-      
-      <tr hide="Yes" style="display: none;">
+        <tr hide="Yes" style="display: none;">
         
-        <th scope="row">Jan, 2019</th>
-        <td>
-          Our paper SYNERGY is awarded an <b>Honorable Mention at IEEE MICRO's Top Picks 2019</b>!
-        </td>
-      </tr>
+          <th scope="row">May, 2021</th>
+          <td>
+            Finalist in the <b>Qualcomm Innovation Fellowship 2021</b>!
+          </td>
+        </tr>
       
-      
-      <tr hide="Yes" style="display: none;">
         
-        <th scope="row">Dec, 2018</th>
-        <td>
-          Finalist in <b>Microsoft Research PhD Fellowship 2019</b>!
-        </td>
-      </tr>
-      
-      
-      <tr hide="Yes" style="display: none;">
+        <tr hide="Yes" style="display: none;">
         
-        <th scope="row">Aug, 2018</th>
-        <td>
-          <a href='https://gururaj-s.github.io/assets/pdf/MICRO18_Saileshwar.pdf'>Morphable Counters</a>, our work on in-DRAM Merkle Trees is accepted at <b>MICRO 2018</b> [<a href='https://github.com/gururaj-s/morphcounters'>Github</a>].
-        </td>
-      </tr>
+          <th scope="row">Mar, 2021</th>
+          <td>
+            Invited to serve on the <b>Program Committee (PC)</b> for <b>IEEE S&P (Oakland) 2022</b>.
+          </td>
+        </tr>
       
-      
-      <tr hide="Yes" style="display: none;">
         
-        <th scope="row">Nov, 2017</th>
-        <td>
-          <a href='https://gururaj-s.github.io/assets/pdf/HPCA18_Saileshwar.pdf'>SYNERGY</a>, our work on co-designing DRAM integrity and reliability accepted at <b>HPCA 2018</b>!
-        </td>
-      </tr>
+        <tr hide="Yes" style="display: none;">
+        
+          <th scope="row">Mar, 2021</th>
+          <td>
+            <a href='https://gururaj-s.github.io/assets/pdf/CCS21_Ding.pdf'>Hardware Support for Fuzzing</a> accepted at <b>CCS 2021</b>!
+          </td>
+        </tr>
       
-    </table>
+        
+        <tr hide="Yes" style="display: none;">
+        
+          <th scope="row">Mar, 2021</th>
+          <td>
+            Recognized as <b>Distinguished Reviewer</b> in the Shadow PC of <b>IEEE S&P (Oakland) 2021</b>.
+          </td>
+        </tr>
+      
+        
+        <tr hide="Yes" style="display: none;">
+        
+          <th scope="row">Feb, 2021</th>
+          <td>
+            <a href='https://gururaj-s.github.io/assets/pdf/SEC21_Saileshwar.pdf'>MIRAGE</a>, a principled defense vs cache attacks accepted at <b>USENIX Security 2021</b> [<a href='https://github.com/gururaj-s/mirage'>Github</a>].
+          </td>
+        </tr>
+      
+        
+        <tr hide="Yes" style="display: none;">
+        
+          <th scope="row">Jan, 2021</th>
+          <td>
+            <a href='https://gururaj-s.github.io/assets/pdf/ASPLOS21_Saileshwar.pdf'>Streamline</a>, the fastest cache covert-channel attack accepted at <b>ASPLOS 2021</b> [<a href='https://github.com/gururaj-s/streamline'>Github</a>].
+          </td>
+        </tr>
+      
+        
+        <tr hide="Yes" style="display: none;">
+        
+          <th scope="row">Jan, 2021</th>
+          <td>
+            Awarded <b>Georgia Tech IISP Cybersecurity Fellowship</b>!
+          </td>
+        </tr>
+      
+        
+        <tr hide="Yes" style="display: none;">
+        
+          <th scope="row">Nov, 2020</th>
+          <td>
+            Invited to present MIRAGE at IBM Research's Future of Comp-Arch Workshop 2020.
+          </td>
+        </tr>
+      
+        
+        <tr hide="Yes" style="display: none;">
+        
+          <th scope="row">Apr, 2020</th>
+          <td>
+            Selected to participate in the 8th Heidelberg Laureate Forum 2020.
+          </td>
+        </tr>
+      
+        
+        <tr hide="Yes" style="display: none;">
+        
+          <th scope="row">Sep, 2019</th>
+          <td>
+            Invited to present CleanupSpec at IBM Research's Future of Comp-Arch Workshop 2019.
+          </td>
+        </tr>
+      
+        
+        <tr hide="Yes" style="display: none;">
+        
+          <th scope="row">Aug, 2019</th>
+          <td>
+            <a href='https://gururaj-s.github.io/assets/pdf/MICRO19_Saileshwar.pdf'>CleanupSpec</a>, our work on safe speculation is accepted at <b>MICRO 2019</b> [<a href='https://github.com/gururaj-s/cleanupspec'>Github</a>].
+          </td>
+        </tr>
+      
+        
+        <tr hide="Yes" style="display: none;">
+        
+          <th scope="row">May, 2019</th>
+          <td>
+            Finalist in <b>Qualcomm Innovation Fellowship 2019</b>!
+          </td>
+        </tr>
+      
+        
+        <tr hide="Yes" style="display: none;">
+        
+          <th scope="row">Jan, 2019</th>
+          <td>
+            Our paper SYNERGY is awarded an <b>Honorable Mention at IEEE MICRO's Top Picks 2019</b>!
+          </td>
+        </tr>
+      
+        
+        <tr hide="Yes" style="display: none;">
+        
+          <th scope="row">Dec, 2018</th>
+          <td>
+            Finalist in <b>Microsoft Research PhD Fellowship 2019</b>!
+          </td>
+        </tr>
+      
+        
+        <tr hide="Yes" style="display: none;">
+        
+          <th scope="row">Aug, 2018</th>
+          <td>
+            <a href='https://gururaj-s.github.io/assets/pdf/MICRO18_Saileshwar.pdf'>Morphable Counters</a>, our work on in-DRAM Merkle Trees is accepted at <b>MICRO 2018</b> [<a href='https://github.com/gururaj-s/morphcounters'>Github</a>].
+          </td>
+        </tr>
+      
+        
+        <tr hide="Yes" style="display: none;">
+        
+          <th scope="row">Nov, 2017</th>
+          <td>
+            <a href='https://gururaj-s.github.io/assets/pdf/HPCA18_Saileshwar.pdf'>SYNERGY</a>, our work on co-designing DRAM integrity and reliability accepted at <b>HPCA 2018</b>!
+          </td>
+        </tr>
+      
+      </table>
   </div>
   
 </div>
@@ -1685,12 +1685,12 @@ Gururaj's Homepage
     
 <footer class="fixed-bottom">
   <div class="container mt-0">
-    &copy; Copyright 2023 Gururaj  Saileshwar.
+    &copy; Copyright 2024 Gururaj  Saileshwar.
     Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
 
     
     
-    Last updated: August 16, 2023.
+    Last updated: February 21, 2024.
     
   </div>
 </footer>
