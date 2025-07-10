@@ -65,7 +65,7 @@ body.sticky-bottom-footer {
 }
 
 .container {
-  max-width: 1300px;
+  max-width: 1100px;
 }
 
 .profile {
@@ -647,6 +647,29 @@ d-appendix a, d-appendix a.footnote-backlink {
 }
 d-appendix a:hover, d-appendix a.footnote-backlink:hover {
   color: var(--global-hover-color) !important;
+}
+
+/* Team & Publications */
+#gridid img {
+  margin: 0px 22px 6px 0;
+  border-radius: 10%;
+  box-shadow: 2px 2px 5px #888888;
+}
+
+#homeid img {
+  margin: 0 0 0 0;
+  border-radius: 5%;
+  box-shadow: 0px 0px 0px #888888;
+}
+
+#picid img {
+  margin: 6px 3px 60px 6px;
+  border-radius: 1%;
+  box-shadow: 2px 2px 5px #888888;
+}
+
+#gridid .row {
+  margin-bottom: 24px;
 }
 
 /*# sourceMappingURL=main.css.map */
