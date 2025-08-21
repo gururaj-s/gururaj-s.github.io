@@ -176,7 +176,8 @@
     <h2 id="yet-another-mirage-of-breaking-mirage">Yet Another Mirage of Breaking MIRAGE</h2>
 <p><em>Debunking Occupancy-based Side-Channel Attacks on Fully Associative Randomized Caches</em></p>
 
-<p><strong>Authors:</strong> Chris Cao, Gururaj Saileshwar (University of Toronto)</p>
+<p><strong>Authors:</strong> Chris Cao, Gururaj Saileshwar (University of Toronto)<br />
+<a href="https://gururaj-s.github.io/assets/pdf/Yet-Another-Mirage.pdf">[Paper]</a> [<a href="https://github.com/sith-lab/yet-another-mirage-of-breaking-mirage">Code</a>]</p>
 
 <hr />
 
@@ -241,7 +242,7 @@
 
 <p>While Cache Occupancy (<em>O</em>) is a function of both Victim Accesses (<em>V</em>) and Global Evictions (<em>GE</em>), i.e., <em>O = f(V, GE)</em> in MIRAGE, RCO’s assumption of a deterministic sequence of GEs each time artificially makes <em>O</em> trivially correlated with key-dependent memory accesses, <em>V</em>. However, this is not realistic as in a real hardware implementation, an attacker cannot reset the RNG state of the global evictions to a fixed state for each AES encryption.</p>
 
-<p>✅ <strong>Our Fix: Correct modeling of MIRAGE requires randomizing the global eviction seed</strong> per encryption (e.g., using <code class="language-plaintext highlighter-rouge">time()</code> or the more secure alternative for seeding, <code class="language-plaintext highlighter-rouge">rdseed32()</code> available in x86).</p>
+<p>✅ <strong>Our Fix: Correct modeling of MIRAGE requires randomizing the global eviction seed</strong> per encryption (e.g., using <code class="language-plaintext highlighter-rouge">std::random_device</code> on systems where a hardware-based entropy source is available).</p>
 
 <p>After this fix, no correlations between the victim T-Table accesses in the last round and the attacker access times are observed.</p>
 
@@ -322,7 +323,7 @@ Right: Random seed (our fix) removes correlation → no leakage.</p>
 
     
     
-    Last updated: August 14, 2025.
+    Last updated: August 21, 2025.
     
   </div>
 </footer>
