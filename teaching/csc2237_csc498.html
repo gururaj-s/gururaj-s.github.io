@@ -60,8 +60,9 @@
   }
 
   /* --- schedule table --------------------------------------------------------- */
+  .tablewrap{overflow-x:auto;max-width:100%;margin:0 0 1.4em}
   table.schedule{
-    border-collapse:collapse;width:100%;font-size:15.5px;margin:0 0 1.4em;
+    border-collapse:collapse;width:100%;min-width:900px;font-size:15.5px;margin:0;
     border-top:1px solid var(--cell);border-bottom:1px solid var(--cell);
   }
   table.schedule th{
@@ -82,13 +83,12 @@
   table.schedule td:nth-child(2){
     white-space:nowrap;width:92px;font-variant-numeric:tabular-nums;
   }
-  table.schedule td:nth-child(3){font-weight:500}
-  table.schedule td:last-child{color:#444}
+  table.schedule td:nth-child(3){font-weight:500;width:26%}
+  table.schedule td:nth-child(4){color:#444;width:22%}
+  table.schedule td:last-child{width:30%}
+  ol.rd{margin:0;padding-left:18px}
+  ol.rd li{margin:0 0 .2em;line-height:1.45}
 
-  @media (max-width:900px){
-    /* let the wide schedule scroll instead of squeezing the page */
-    table.schedule{display:block;overflow-x:auto}
-  }
   @media (max-width:640px){
     body{font-size:15.5px}
     h1{font-size:26px}
@@ -158,26 +158,28 @@
   </div>
 
   <h2>Schedule</h2>
-  <p class="content">Lectures are on Mondays, 3:00 PM &ndash; 5:00 PM.</p>
+  <p class="content">Lectures are on Mondays, 3:00 PM &ndash; 5:00 PM. Suggested readings will be posted here ahead of each lecture.</p>
+  <div class="tablewrap">
   <table class="schedule">
     <thead>
-      <tr><th>#</th><th>Date</th><th>Topic</th><th>Deadlines</th></tr>
+      <tr><th>#</th><th>Date</th><th>Topic</th><th>Deadlines</th><th>Suggested Readings</th></tr>
     </thead>
     <tbody>
-      <tr><td>1</td><td>Sep 14</td><td>Introduction &amp; Side-Channel Attacks</td><td></td></tr>
-      <tr><td>2</td><td>Sep 21</td><td>Defenses Against Side-Channel Attacks</td><td>Review 1 due; Assignment 1 released</td></tr>
-      <tr><td>3</td><td>Sep 28</td><td>Transient Execution Attacks (Spectre, Meltdown)</td><td></td></tr>
-      <tr><td>4</td><td>Oct 5</td><td>Defenses Against Transient Execution Attacks</td><td>Assignment 1 due; Assignment 2 released</td></tr>
-      <tr><td>5</td><td>Oct 19</td><td>Midterm 1</td><td>Review 2 due; project proposal due</td></tr>
-      <tr><td>6</td><td>Nov 2</td><td>Rowhammer Attacks</td><td>Assignment 2 due</td></tr>
-      <tr><td>7</td><td>Nov 9</td><td>Rowhammer Defenses</td><td>Review 3 due</td></tr>
-      <tr><td>8</td><td>Nov 16</td><td>Trusted Execution Environments (TEEs)</td><td></td></tr>
-      <tr><td>9</td><td>Nov 23</td><td>Attacks and Defenses on TEEs</td><td></td></tr>
-      <tr><td>10</td><td>Nov 30</td><td>Midterm 2</td><td></td></tr>
-      <tr><td>11</td><td>Dec 7</td><td>Project Presentations</td><td></td></tr>
-      <tr><td>12</td><td>Dec 8</td><td>Project Presentations</td><td>Project report due Dec 8</td></tr>
+      <tr><td>1</td><td>Sep 14</td><td>Introduction &amp; Side-Channel Attacks</td><td></td><td><ol class="rd"><li><a href="https://www.youtube.com/watch?v=_9EzwNMa-Ow&amp">Side Channel Security: Cache Side Channels and AES</a> (video)</li><li><a href="https://dl.acm.org/doi/pdf/10.1145/1653662.1653687">Hey, You, Get Off of My Cloud</a> (CCS ’09)</li></ol></td></tr>
+      <tr><td>2</td><td>Sep 21</td><td>Defenses Against Side-Channel Attacks</td><td>Review 1 due; Assignment 1 released</td><td><ol class="rd"><li><a href="https://www.sigarch.org/battle-for-secure-caches-attacks-and-defenses-on-randomized-caches/">Battle for Secure Caches: Attacks and Defenses on Randomized Caches</a> (SIGARCH blog)</li><li><a href="https://www.usenix.org/system/files/sec21-saileshwar.pdf">MIRAGE</a> (USENIX Security ’21)</li></ol></td></tr>
+      <tr><td>3</td><td>Sep 28</td><td>Transient Execution Attacks (Spectre, Meltdown)</td><td></td><td></td></tr>
+      <tr><td>4</td><td>Oct 5</td><td>Defenses Against Transient Execution Attacks</td><td>Assignment 1 due; Assignment 2 released</td><td></td></tr>
+      <tr><td>5</td><td>Oct 19</td><td>Midterm 1</td><td>Review 2 due; project proposal due</td><td></td></tr>
+      <tr><td>6</td><td>Nov 2</td><td>Rowhammer Attacks</td><td>Assignment 2 due</td><td></td></tr>
+      <tr><td>7</td><td>Nov 9</td><td>Rowhammer Defenses</td><td>Review 3 due</td><td></td></tr>
+      <tr><td>8</td><td>Nov 16</td><td>Trusted Execution Environments (TEEs)</td><td></td><td></td></tr>
+      <tr><td>9</td><td>Nov 23</td><td>Attacks and Defenses on TEEs</td><td></td><td></td></tr>
+      <tr><td>10</td><td>Nov 30</td><td>Midterm 2</td><td></td><td></td></tr>
+      <tr><td>11</td><td>Dec 7</td><td>Project Presentations</td><td></td><td></td></tr>
+      <tr><td>12</td><td>Dec 8</td><td>Project Presentations</td><td>Project report due Dec 8</td><td></td></tr>
     </tbody>
   </table>
+  </div>
 </main>
 
 </body>
